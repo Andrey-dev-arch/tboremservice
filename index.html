@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт оборудования ТБО</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Сервис по ремонту оборудования для утилизации ТБО</h1>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#map">Карта</a>
+      <a href="#request">Заявка</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Наши услуги</h2>
+      <ul>
+        <li>Диагностика и ремонт прессов</li>
+        <li>Обслуживание дробильных установок</li>
+        <li>Модернизация оборудования</li>
+      </ul>
+    </section>
+
+    <section id="reviews">
+      <h2>Отзывы клиентов</h2>
+      <blockquote>“Отличный сервис! Быстро и качественно отремонтировали пресс.” — Иван</blockquote>
+      <blockquote>“Профессиональный подход и вежливый персонал.” — Мария</blockquote>
+    </section>
+
+    <section id="gallery">
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200x150?text=Фото+1" alt="Фото 1">
+        <img src="https://via.placeholder.com/200x150?text=Фото+2" alt="Фото 2">
+        <img src="https://via.placeholder.com/200x150?text=Фото+3" alt="Фото 3">
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Где мы находимся</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="request">
+      <h2>Оставить заявку</h2>
+      <form id="requestForm">
+        <label for="reqName">Имя:</label>
+        <input type="text" id="reqName" name="reqName" required>
+
+        <label for="reqPhone">Телефон:</label>
+        <input type="tel" id="reqPhone" name="reqPhone" required>
+
+        <label for="reqDetails">Описание проблемы:</label>
+        <textarea id="reqDetails" name="reqDetails" required></textarea>
+
+        <button type="submit">Отправить заявку</button>
+      </form>
+      <p id="requestResponse"></p>
+    </section>
+
+    <section id="contact">
+      <h2>Связаться с нами</h2>
+      <form id="contactForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Отправить</button>
+      </form>
+      <p id="formResponse"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Сервис ТБО. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
